@@ -40,7 +40,7 @@ class SignUp extends Component {
         confirmPassword: "",
       });
       console.log("props", this.props);
-      this.props.navigate("/");
+      // this.props.navigate("/");
     } catch (error) {
       console.log(error);
     }
