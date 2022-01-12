@@ -1,7 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function withNavigation(Component) {
-  return (props) => <Component {...props} navigate={useNavigate()} />;
+  return (props) => (
+    <Component {...props} navigate={useNavigate()} params={useParams()} />
+  );
 }
 
 export default withNavigation;
